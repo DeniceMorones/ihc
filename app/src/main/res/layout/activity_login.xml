@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1EEE4"
+        tools:context=".LoginActivity">
+
+    <!-- CardView con fondo blanco -->
+    <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+            <!-- Texto de Bienvenido -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bentham"
+                android:text="BIENVENIDO"
+                android:textColor="#6B8A47"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/inria_sans_light"
+                android:hint="Usuario"
+                android:inputType="text"
+                android:textColor="#6B8A47"
+                android:textColorHint="#A7C584" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/inria_sans_light"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#5C7285"
+                android:textColorHint="#A7C584" />
+
+
+            <!-- Botón de Iniciar Sesión -->
+            <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#A7C584"
+                    android:fontFamily="@font/inria_sans_light"
+                    android:text="Iniciar sesion"
+                    android:textColor="#102113"
+                    android:textStyle="bold" />
+
+            <!-- Botón de Registrarse -->
+            <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#6B8A47"
+                    android:text="Registrarse"
+                    android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Texto en la parte inferior -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="EcoCycle"
+            android:textColor="#5C7285"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

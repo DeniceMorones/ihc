@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A7C585"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bentham"
+                android:text="Separa tus residuos"
+                android:textColor="#2F3E1D"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bentham"
+                android:text="Divide tus residuos en orgánicos, reciclables y no reciclables para facilitar el proceso."
+                android:textColor="#2F3E1D"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="118dp"
+            android:layout_height="98dp"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/plant_2"
+            android:translationX="16dp"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</LinearLayout>
